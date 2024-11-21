@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Load the CSV file
-FILE_PATH = r"C:\Users\Public\rto.csv"
+# Load the CSV file from the GitHub repository
+FILE_PATH = "https://raw.githubusercontent.com/rakeshnirzari1/rto/main/rto.csv"
+
 @st.cache_data
 def load_data():
     df = pd.read_csv(FILE_PATH)
